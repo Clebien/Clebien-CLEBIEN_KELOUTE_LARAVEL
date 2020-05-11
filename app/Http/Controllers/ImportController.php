@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Imports\importIndividu;
+use App\Imports\ImportIndividu;
 use App\Imports\ImportGroupe;
 use Maatwebsite\Excel\Facades\Excel;
 use DB;
