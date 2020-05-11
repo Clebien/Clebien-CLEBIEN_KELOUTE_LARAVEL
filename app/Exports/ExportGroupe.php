@@ -25,7 +25,7 @@ class ExportGroupe implements FromCollection, WithHeadings
             'libelle'=>['required']
         ]);
         $stat = DB::table('individu')
-                ->select('num','nom','prenom','libelle','libellé','Annee')
+                ->select('num','nom','prenom','libelle','titre','Annee')
                 ->leftjoin('appartenir','individu.ID','=','appartenir.Individu_ID')
                 ->leftjoin('groupe','appartenir.groupe_groupeID','=','groupe.groupeID')
                 ->leftjoin('annuaire','annuaire.annuaireID','=','individu.annuaire')
