@@ -12,7 +12,7 @@ class ImportGroupe implements ToModel
     public function model(array $row)
     {
         $annuaireID=DB::table('annuaire')
-              ->where('libelle',@$row[4])
+              ->where('titre',@$row[4])
               ->take(1)
               ->value('annuaireID');
 
